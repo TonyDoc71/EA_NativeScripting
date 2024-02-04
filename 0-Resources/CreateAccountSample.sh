@@ -4,19 +4,19 @@
 echo "Creating keys"
 mkdir -p ../wallets
 cardano-cli address key-gen \
---verification-key-file ../wallets/enterprise.vkey \
---signing-key-file ../wallets/enterprise.skey
+--verification-key-file ../wallets/1enterprise.vkey \
+--signing-key-file ../wallets/1enterprise1.skey
 
 cardano-cli stake-address key-gen \
---verification-key-file ../wallets/staking.vkey \
---signing-key-file ../wallets/staking.skey
+--verification-key-file ../wallets/1staking.vkey \
+--signing-key-file ../wallets/1staking.skey
 
 #Create addresses
 echo "Creating addresses"
 cardano-cli address build \
---payment-verification-key-file ../wallets/enterprise.vkey \
---stake-verification-key-file ../wallets/staking.vkey \
---out-file ../wallets/payment.addr \
+--payment-verification-key-file ../wallets/1enterprise.vkey \
+--stake-verification-key-file ../wallets/1staking.vkey \
+--out-file ../wallets/1payment.addr \
 --testnet-magic 2
 
 

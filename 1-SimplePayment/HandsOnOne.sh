@@ -3,15 +3,15 @@ cardano-cli query protocol-parameters --testnet-magic 2 --out-file protocol.para
 cardano-cli transaction build \
   --babbage-era \
   --testnet-magic 2 \
-  --tx-in "6aad99ae015f657fa09430d25665b6ddbd757f02335a8b95f1d6d3df7467651d#0" \
-  --tx-out "addr_test1qqhe2k79d0aexj0mx25gl4ku04mqmygl8ecs9nekmn0wqykjn5caavpcfrhen8wkj0c6vaz0n9a7xcp4s3g3sfqc0spseknmvw"+"5000000000" \
-  --change-address $nami \
+  --tx-in "026432da32e2cc933316ad3f61a2917ad55736c5b8b91c090d9a95bf9f5b6dbd#1" \
+  --tx-out "addr_test1qpc6mrwu9cucrq4w6y69qchflvypq76a47ylvjvm2wph4szeq579yu2z8s4m4tn0a9g4gfce50p25afc24knsf6pj96sz35wnt"+"1100000" \
+  --change-address "addr_test1vzpjhv74y9sfykqtkkttdlf446z9ccadankd09vyvmkr3fg5a5acz" \
   --protocol-params-file protocol.params \
   --out-file payment.unsigned
 
 cardano-cli transaction sign \
   --tx-body-file payment.unsigned \
-  --signing-key-file ../wallets/batch107.skey \
+  --signing-key-file ../WalletMine/ent107.skey \
   --testnet-magic 2 \
   --out-file payment.signed
 
