@@ -21,7 +21,7 @@ cardano-cli transaction build \
   --change-address $Adr01 \
   --mint "$tokenammount $policyid.$tokenname" \
   --mint-script-file NFTpolicy.script \
-  --invalid-before 13136667 \
+  --invalid-hereafter 13136667 \
   --metadata-json-file NFTmetadata.json \
   --protocol-params-file protocol.params \
   --out-file NFTminting.unsigned
