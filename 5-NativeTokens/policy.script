@@ -3,18 +3,18 @@
     "scripts": [
         {
             "type": "before",
-            "slot": 26057313,
+            "slot": 41595076,
             "scripts": [
                 {
                     "type": "any",
                     "scripts": [
                         {
                             "type": "sig",
-                            "keyHash": "58206af50f50f737694134c27c91d9ac1d6dfe65da00ea1aa0d7a9aa07297c2211f3"
+                            "keyHash": "c2211dd7c256a4684aaa5757f950f68c746e5474e2a6998b1d4580f0"
                         },
                         {
                             "type": "sig",
-                            "keyHash": "697a501b7d05766b3d08e39dab43e0f170973d3398b28745b3b8ce55"
+                            "keyHash": "a2a15a1901d0229101bcb31629629210ce8d2ccf058d05afea33e273"
                         }
                     ]
                 }
@@ -22,18 +22,18 @@
         },
         {
             "type": "after",
-            "slot": 26057313,
+            "slot": 41595076,
             "scripts": [
                 {
                     "type": "all",
                     "scripts": [
                         {
                             "type": "sig",
-                            "keyHash": "8fd2af318fe6fd7a8b2f56861b7dda312411281616b902953abf7121"
+                            "keyHash": "c2211dd7c256a4684aaa5757f950f68c746e5474e2a6998b1d4580f0"
                         },
                         {
                             "type": "sig",
-                            "keyHash": "697a501b7d05766b3d08e39dab43e0f170973d3398b28745b3b8ce55"
+                            "keyHash": "a2a15a1901d0229101bcb31629629210ce8d2ccf058d05afea33e273"
                         }
                     ]
                 }
